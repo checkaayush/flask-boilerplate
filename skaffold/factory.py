@@ -16,7 +16,7 @@ def _register_blueprints(app, package_name):
 
 def create_app(package_name, settings_override=None):
     app = Flask(package_name, instance_relative_config=True)
-    app.config.from_object('collect_api.config')
+    app.config.from_object('skaffold.config')
     app.config.from_object(settings_override)
     _register_blueprints(app, package_name)
     return app

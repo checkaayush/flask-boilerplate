@@ -1,4 +1,4 @@
-from collect_api import factory
+from skaffold import factory
 
 
 def create_app(settings_override=None):
